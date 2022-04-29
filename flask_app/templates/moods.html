@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css')}}" class="css">
+    <title>Mood Jams</title>
+</head>
+<body>
+   
+    <div class="container">
+        <h1 class="font" style="margin-top: 5rem;">Pick A Mood</h1><br>
+    </div>
+    <div class="container">
+        <div class="button-gap">
+            {% for mood in moods %}
+                <button type="button" class="btn btn-dark button-text no-link font" name="mood" onclick="window.location.href='/mood/{{mood.id}}';">{{mood.name}}</button>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="container">
+        <h4 class="font" style="margin-top: 2rem;"><a href="/mood/creator">Add A Mood +  </a> &nbsp;| <a href="/moods/edit"> Edit Moods </a> &nbsp;| <a href="/mood/custom_maker"> Custom Mood +</a></h4>
+        
+    </div>
+</body>
+</html>

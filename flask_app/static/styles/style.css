@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.font{
+    font-family: 'Lobster Two', cursive;
+    color: white;
+}
+
+.no-link{
+    text-decoration: none;
+    box-shadow: none;
+    font-style: normal;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+.container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+body{
+    background-image: url("../imgs/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button-text{
+    font-size: 1.5rem;
+}
+
+.button-gap{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.playlist{
+    margin-top: 3rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.sign-in{
+    margin-top: 25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.size{
+    font-size: x-large;
+}
